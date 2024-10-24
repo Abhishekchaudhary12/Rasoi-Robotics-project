@@ -1,0 +1,224 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     overflow-x:  hidden;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+header img {
+    width: 400px; /* Adjust the size of the logo */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF; /* Change to a highlight color */
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:hover{
+    background-color: transparent;
+    color: red;
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 1rem;
+    flex: 1 1 300px; /* Ensures that sections are responsive */
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+form {
+    margin-top: 1rem;
+    text-align: left; /* Align the form elements to the left */
+}
+
+form label {
+    font-size: 1rem;
+    color: #fff; /* White text for labels */
+}
+
+form input[type="email"] {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px; /* Sets the maximum width for the email input */
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures the padding and border are included in the total width */
+}
+
+form input[type="email"]::placeholder {
+    color: #999; /* Grey placeholder text */
+}
+
+form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 50px; /* Ensures uniform icon size */
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #777;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hero {
+    background-image: url('https://rasoirobotics.com/img/Hero_img.webp'); /* You can replace this with an actual image */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+/* Story Section */
+.story {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 80px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        
+    }
+
+    header img {
+        width: 200px; /* Make the logo smaller on mobile */
+    
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+        left: 20px;
+    }
+
+    nav a {
+        padding: 0.5rem 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+}
